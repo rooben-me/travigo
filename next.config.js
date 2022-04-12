@@ -4,6 +4,9 @@ const nextConfig = {
   env: {
     DB_LOCAL_URI: "mongodb://localhost:27017/travigo",
   },
+  images: {
+    domains: ["res.cloudinary.com"],
+  },
 };
 
 module.exports = nextConfig;
