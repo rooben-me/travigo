@@ -5,6 +5,11 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.65),
+      rgba(255, 255, 255, 0.65)
+    ),
+    url("https://www.toptal.com/designers/subtlepatterns/uploads/double-bubble-outline.png");
 }
 
 :focus-within {

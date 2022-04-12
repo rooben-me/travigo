@@ -1,12 +1,12 @@
 import Head from "next/head";
 
-import Layouts from "../components/Layouts";
-import Room from "../components/room/Room";
+import Layouts from "../../components/Layouts";
+import RoomDetails from "../../components/room/RoomDetails";
 
-import { getRooms } from "../redux/actions/roomsActions";
-import { wrapper } from "../redux/store";
+import { getRoomDetails } from "../../redux/actions/roomsActions";
+import { wrapper } from "../../redux/store";
 
-export default function Home() {
+export default function roomDetailsPage() {
   return (
     <div>
       <Head>
@@ -21,14 +21,14 @@ export default function Home() {
       </Head>
 
       <Layouts>
-        <Room />
+        <RoomDetails />
       </Layouts>
     </div>
   );
 }
 
 export const getServerSideProps = wrapper.getServerSideProps(
-  async ({ req, query, store }) => {
-    await store.dispatch(getRooms(req, query.page));
+  async ({ req, params, store }) => {
+    await store.dispatch(getRoomDetails(req, params.id));
   }
 );
