@@ -4,7 +4,9 @@ const rooms = require("../data/rooms.json");
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://localhost:27017/travigo")
+  .connect(
+    "mongodb+srv://ruban:Goodgame6190@cluster0.vbfzh.mongodb.net/travigo?retryWrites=true&w=majority"
+  )
   .then((con) => console.log("connected to local database"));
 
 const seedRooms = async () => {
