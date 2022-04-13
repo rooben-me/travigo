@@ -17,7 +17,7 @@ const Navbar = () => {
         </a>
       </Link>
 
-      <button className="rounded-full bg-indigo-500 px-5 py-3 font-medium text-white focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 active:bg-indigo-600">
+      <button className="rounded-full bg-indigo-600 px-5 py-3 font-medium text-white focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 active:bg-indigo-700">
         Create account
       </button>
     </div>

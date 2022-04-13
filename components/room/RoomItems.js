@@ -16,6 +16,7 @@ const RoomItems = ({ room }) => {
             objectFit="cover"
             loading="lazy"
             src={images[0].url}
+            alt="room images"
           />
           <span className="absolute right-3 top-3 rounded-xl bg-white px-3 py-1.5 text-xl font-semibold text-rose-500">
             ${pricePerNight} / night
@@ -30,7 +31,11 @@ const RoomItems = ({ room }) => {
 
         <div className="flex items-center gap-4 font-medium">
           <div className="items-centerg flex gap-2 rounded-full bg-[#FCF7E5] px-3 py-1.5">
-            <Image src="/static/images/star.svg" width={20} height={20} />
+            <Image
+              alt="star icon"
+              src="/static/images/star.svg"
+              className="h-6 w-5"
+            />
             <p className="text-md text-slate-700 ">{ratings || "0.0"}</p>
           </div>
           <p className="text-slate-700">({numOfReviews} reviews)</p>
