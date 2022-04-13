@@ -36,6 +36,7 @@ const RoomItems = ({ room }) => {
               src="/static/images/star.svg"
               width={20}
               height={20}
+              layout="fixed"
             />
             <p className="text-md text-slate-700 ">{ratings || "0.0"}</p>
           </div>
