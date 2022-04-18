@@ -38,7 +38,7 @@ const Room = () => {
 
   return (
     <div>
-      <h1 className="mx-auto my-8 max-w-xl bg-gradient-to-r from-indigo-400 to-rose-500 bg-clip-text text-center text-5xl font-extrabold leading-snug text-transparent md:my-4 lg:max-w-2xl lg:text-4xl lg:leading-snug">
+      <h1 className="mx-auto my-8 max-w-xl bg-gradient-to-r from-indigo-400 to-rose-500 bg-clip-text text-center text-2xl font-extrabold leading-snug text-transparent md:my-4 md:text-3xl lg:max-w-2xl lg:text-4xl lg:leading-snug">
         Search your Dream Vacation Spot
       </h1>
       <form
