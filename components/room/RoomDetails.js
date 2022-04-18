@@ -53,8 +53,8 @@ const RoomDetails = () => {
         className="bordertext-center my-8 flex items-center justify-center rounded-2xl shadow-xl"
       >
         {room?.images.map(({ public_id, url, _id }) => (
-          <SwiperSlide>
-            <div className="">
+          <SwiperSlide key={_id}>
+            <div>
               <Image
                 alt="star icon"
                 src={url}
