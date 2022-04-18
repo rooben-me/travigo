@@ -6,7 +6,7 @@ const dbConnect = () => {
   }
 
   mongoose
-    .connect(process.env.DB_URI)
+    .connect(process.env.DB_LOCAL_URI)
     .then((con) => console.log("connected to local database"));
 };
 
