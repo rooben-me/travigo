@@ -15,8 +15,6 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 const RoomDetails = () => {
   const { room } = useSelector((state) => state.roomDetails);
 
-  console.log(room);
-
   return (
     <div>
       <Link href="/">

@@ -2,7 +2,6 @@ import React from "react";
 
 import Image from "next/image";
 import Link from "next/link";
-import { Router } from "next/router";
 
 const Navbar = () => {
   return (

@@ -1,5 +1,5 @@
-import { useState, useRef } from "react";
-import Router, { useRouter } from "next/router";
+import { useState } from "react";
+import { useRouter } from "next/router";
 
 import RoomItems from "./RoomItems";
 
