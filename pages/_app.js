@@ -7,7 +7,7 @@ import { NotificationsProvider } from "@mantine/notifications";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <MantineProvider>
+    <MantineProvider emotionOptions={{ key: "mantine" }}>
       <NotificationsProvider>
         <Component {...pageProps} />
       </NotificationsProvider>
